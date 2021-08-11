@@ -1,0 +1,168 @@
+<div class="grid grid-cols-3 h-screen">
+  <div class="flex flex-col justify-between h-screen">
+    <div class="text-2xl font-bold py-6 px-10">TodoApp</div>
+    <div class="flex flex-col flex-grow overflow-auto p-6">
+      <button class="flex w-full text-gray-500 font-medium px-4 py-3 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+        </svg>
+        <div class="text-left flex-grow">Today</div>
+      </button>
+      <button class="flex w-full text-gray-500 font-medium px-4 py-3 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z" />
+        </svg>
+        <div class="text-left flex-grow">Uncategorized</div>
+      </button>
+      <div class="flex flex-col rounded-lg">
+        <button class="flex w-full bg-blue-50 text-blue-800 font-medium px-4 py-3 rounded-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
+          <div class="text-left flex-grow">Collections</div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 my-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+
+        <div class="flex flex-col ml-4">
+          <button class="flex w-full text-gray-500 px-4 py-2">
+            <div class="w-6 h-6 p-1.5 mr-3">
+              <div class="w-full h-full bg-red-500 rounded"></div>
+            </div>
+            <div class="text-left flex-grow">Groceries</div>
+          </button>
+          <button class="flex w-full text-gray-500 px-4 py-2">
+            <div class="w-6 h-6 p-1.5 mr-3">
+              <div class="w-full h-full bg-green-500 rounded"></div>
+            </div>
+            <div class="text-left flex-grow">Movies</div>
+          </button>
+          <button class="flex w-full bg-blue-50 text-blue-800 font-medium px-4 py-2 rounded-lg">
+            <div class="w-6 h-6 p-1.5 mr-3">
+              <div class="w-full h-full bg-blue-500 rounded"></div>
+            </div>
+            <div class="text-left flex-grow">Books</div>
+          </button>
+          <button class="flex w-full opacity-50 px-4 py-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            <div class="text-left flex-grow">Add New</div>
+          </button>
+        </div>
+      </div>
+
+      <button class="flex w-full text-gray-500 font-medium px-4 py-3 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+        </svg>
+        <div class="text-left flex-grow">Tags</div>
+      </button>
+    </div>
+    <div class="flex flex-col p-6">
+      <button class="flex w-full text-gray-500 font-medium px-4 py-3 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <div class="text-left flex-grow">Settings</div>
+      </button>
+      <button class="flex w-full text-gray-500 font-medium px-4 py-2  rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+        <div class="text-left flex-grow">Log out</div>
+      </button>
+    </div>
+  </div>
+  <div class="col-span-2 bg-blue-50 px-10 py-6">
+    <div class="flex flex-col">
+      <div class="flex flex-row mb-6">
+        <div class="flex flex-row flex-grow items-center">
+          <label for="search">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+          </label>
+          <input type="text" id="search" class="flex-grow bg-transparent py-2" placeholder="Search">
+        </div>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 m-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 m-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+        </button>
+        <button>
+          <div class="w-10 h-10 rounded-full bg-blue-300 ml-2"></div>
+        </button>
+      </div>
+      <div class="flex flex-row items-center mb-2">
+        <div class="w-4 h-4 mr-4">
+          <div class="w-full h-full bg-blue-500 rounded"></div>
+        </div>
+        <h1 class="text-3xl font-medium flex-grow">Books</h1>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+          </svg>
+        </button>
+      </div>
+      
+
+      <div class="flex flex-col my-4">
+        <div class="flex flex-row justify-between align-top bg-white px-4 py-3 my-2 rounded-lg">
+          <div class="flex-none w-5 h-5 mr-5 my-0.5 border-2 border-gray-200 rounded-full bg-gray-100"></div>
+          <div class="flex-grow font-medium">Why We Sleep by Matthew Walker</div>
+          <button class="flex-none h-6 w-6 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-row justify-between align-top bg-white px-4 py-3 my-2 rounded-lg">
+          <div class="flex-none w-5 h-5 mr-5 my-0.5 border-2 border-gray-200 rounded-full bg-gray-100"></div>
+          <div class="flex-grow font-medium">Sapiens: A Brief History of Humankind by Yuval Noah Harari</div>
+          <button class="flex-none h-6 w-6 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-row justify-between align-top bg-white px-4 py-3 my-2 rounded-lg">
+          <div class="flex-none w-5 h-5 mr-5 my-0.5 border-2 border-gray-200 rounded-full bg-gray-100"></div>
+          
+          <button class="flex-none h-6 w-6 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+          </button>
+        </div>
+     
+        <div class="flex flex-row justify-between align-top bg-white px-4 py-3 my-2 rounded-lg">
+          <div class="flex-none w-5 h-5 mr-5 my-0.5 border-2 border-gray-200 rounded-full bg-gray-100"></div>
+          <div class="flex-grow flex flex-col">
+            <div class="font-medium">A Brief History of Time by Stephen Hawking</div>
+            <div class="flex flex-row text-xs">
+            </div>  
+          </div>
+          <div class="flex flex-row text-xs text-red-500 mr-1 py-1 px-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            Tomorrow
+          </div>
+          <button class="flex-none h-6 w-6 flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
